@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Genshin Picks/Bans</title>
+        <link rel="stylesheet" type="text/css" href="https://drive.google.com/uc?export=view&id=13MNwxwEeDOfX4t1ydSGRgXwSV3ylN7N_" />
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="mx-3">
+            <div class="row" id="p1-chars">
+                <p class="player-name mb-0">Player 1 Picks</p>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img01" class="char-img">
+                    <select id="char01" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img02" class="char-img">
+                    <select id="char02" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img03" class="char-img">
+                    <select id="char03" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img04" class="char-img">
+                    <select id="char04" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img05" class="char-img">
+                    <select id="char05" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img06" class="char-img">
+                    <select id="char06" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img07" class="char-img">
+                    <select id="char07" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img08" class="char-img">
+                    <select id="char08" class="chars">
+                    </select>
+                </div>
+                <div class="bans col align-self-end">
+                    <p class="player-name">Player 1 Ban</p>
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img17" class="char-img">
+                    <select id="char17" class="chars">
+                    </select>
+                </div>
+            </div>
+            <div class="row" id="p2-chars">
+                <p class="player-name mt-3" id="p1-p2">Player 2 Picks</p>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img09" class="char-img">
+                    <select id="char09" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img10" class="char-img">
+                    <select id="char10" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img11" class="char-img">
+                    <select id="char11" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img12" class="char-img">
+                    <select id="char12" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img13" class="char-img">
+                    <select id="char13" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img14" class="char-img">
+                    <select id="char14" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img15" class="char-img">
+                    <select id="char15" class="chars">
+                    </select>
+                </div>
+                <div class="col mt-5">
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img16" class="char-img">
+                    <select id="char16" class="chars">
+                    </select>
+                </div>
+                </select>
+                <div class="bans col align-self-end">
+                    <p class="player-name">Player 2 Ban</p>
+                    <img src="https://imgur.com/hW52Tvw.png" id="char-img18" class="char-img">
+                    <select id="char18" class="chars">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-1 mt-3" id="times">
+            <div class="col-7">
+                <div class="row">
+                    <p>Player 1 Recorded Attempts:</p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="chamber1-p1">Chamber 1:</label>
+                        <input id="chamber1-p1" class="without_ampm" type='time' value="10:00">
+                    </div>
+                    <div class="col">
+                        <label for="chamber2-p1">Chamber 2:</label>
+                        <input id="chamber2-p1" class="without_ampm" type='time' value="10:00">
+                    </div>
+                    <div class="col">
+                        <label for="chamber3-p1">Chamber 3:</label>
+                        <input id="chamber3-p1" class="without_ampm" type='time' value="10:00">
+                    </div>
+                    <div class="col">
+                        <label for="total-p1" class="total">Total:</label>
+                        <input id="total-p1" type='text' value="30:00" disabled>
+                    </div>
+                </div>
+                <div class="col">
+                    <p>Player 2 Recorded Attempts:</p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="chamber1-p2">Chamber 1:</label>
+                        <input id="chamber1-p2" class="without_ampm" type='time' value="10:00">
+                    </div>
+                    <div class="col">
+                        <label for="chamber2-p2">Chamber 2:</label>
+                        <input id="chamber2-p2" class="without_ampm" type='time' value="10:00">
+                    </div>
+                    <div class="col">
+                        <label for="chamber3-p2">Chamber 3:</label>
+                        <input id="chamber3-p2" class="without_ampm" type='time' value="10:00">
+                    </div>
+                    <div class="col">
+                        <label for="total-p2" class="total">Total:</label>
+                        <input id="total-p2" type='text' value="30:00" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="col align-self-end" id="coin-flip">
+                <button id="click" type="button">Flip the Coin</button>
+                <br>
+                <img src="https://imgur.com/hW52Tvw.png" id="img-result">
+                <br>
+                <p>Result is: <span id="text-result"></span></p>
+            </div>
+            <div class="col radio-bans">
+                <p class="radio-p">How many bans per player?</p>
+                <label class="container"> One
+                    <input type="radio" name='rd-ban' value="1" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container"> Two
+                    <input type="radio"name="rd-ban" value="2">
+                    <span class="checkmark"></span>
+                </label>   
+            </div>           
+        </div>
+    </body>
+    <script type="text/javascript">
+        var loadedData;
+        var selected;
+        var unpicked=[];
+        var oldval="";
+        document.getElementById('click').onclick = click;
+
+
+        $(document).ready(function() {
+            loadData();
+        });
+
+        window.onbeforeunload = function() {
+            return "Do you wish to leave? Changes will not be saved";
+        }
+        
+        function loadData(){
+            let dropdown = $('.chars');
+            dropdown.empty();
+
+            dropdown.append('<option selected="true" disabled>Pick a Character</option>');
+            dropdown.prop('selectedIndex', 0);
+
+            $.getJSON('https://raw.githubusercontent.com/gabrieljdsena/json/main/chars.json', function (data) {
+                data = data.sort(function(a, b) {
+                    if (a.Name < b.Name) {
+                        return -1;
+                    }
+                });
+                loadedData = data;
+                $.each(data, function (key, entry) {
+                    dropdown.append($('<option></option>').attr('value', entry.Name).text(entry.Name));
+                })
+            });
+        }
+
+        $('select').keyup(function(){
+            oldval = $(this).val();
+        });
+        $('select').hover(function(){
+            oldval = $(this).val();
+        });
+
+        $(document).on('change','input[type=radio][name=rd-ban]', function() {
+            if (this.value == '1') {
+                if($("#char19").val()!=null) $("select").append($('<option></option>').attr('value', $("#char19").val()).text($("#char19").val()));
+                if($("#char20").val()!=null) $("select").append($('<option></option>').attr('value', $("#char20").val()).text($("#char20").val()));
+                $("#extra-p1").remove();
+                $("#extra-p2").remove();
+            }
+            else{
+                $('#p1-chars').append('<div class="bans col align-self-end" id="extra-p1"><p class="player-name">Player 1 Ban</p><img src="https://imgur.com/hW52Tvw.png" id="char-img19" class="char-img"><select id="char19" class="chars"></select></div>');
+                $('#p2-chars').append('<div class="bans col align-self-end" id="extra-p2"><p class="player-name">Player 2 Ban</p><img src="https://imgur.com/hW52Tvw.png" id="char-img20" class="char-img"><select id="char20" class="chars"></select></div>');
+
+                $('#char19').empty();
+                $('#char19').append('<option selected="true" disabled>Pick a Character</option>');
+                $('#char19').prop('selectedIndex', 0);
+
+                $('#char20').empty();
+                $('#char20').append('<option selected="true" disabled>Pick a Character</option>');
+                $('#char20').prop('selectedIndex', 0);
+
+                loadedData.forEach(function(dt) {
+                    let indexVal = unpicked.map(function(e) { return e.Name; }).indexOf(dt.Name);
+                    if(indexVal==-1){
+                        $('#char19').append($('<option></option>').attr('value', dt.Name).text(dt.Name));
+                        $('#char20').append($('<option></option>').attr('value', dt.Name).text(dt.Name));
+                    }
+                });
+            }
+        });
+
+        $(document).on('change','select', function() {
+            selected = this.value;
+            let num = event.target.id.slice(-2);
+            let i = 0;
+
+            $.each(loadedData, function (key, entry) {
+
+                if((entry.Name + "")===(selected)){
+                    $("#char-img" + num).attr('src', entry.Pic+".png");
+                    $("select").each(function(index) {
+
+                        if((parseInt(num)-1) != index){
+                            let idRemove = parseInt(index+1) +"";
+
+                            if(idRemove.length<2) idRemove = "0" + idRemove;
+
+                            if(!containsObject(entry, unpicked)) unpicked.push(entry);
+
+                            if(oldval!=null){
+                                let indexVal = unpicked.map(function(e) { return e.Name; }).indexOf(oldval);
+                                if(typeof unpicked[indexVal].Name !== "undefined"){
+                                    $("#char"+idRemove).append($('<option></option>').attr('value', unpicked[indexVal].Name).text(unpicked[indexVal].Name));
+                                }
+                            }
+                            $("#char"+idRemove+" option[value='"+entry.Name+"']").remove();
+                        }
+                    });
+                }
+            })
+        });
+
+        $("input[type=time]").on('change', function() {
+            let chamber=["00:00","00:00","00:00"];
+            let player = event.target.id.slice(-1);
+
+            if(document.getElementById("chamber1-p"+player).value.length>=5){
+                chamber[0] = document.getElementById("chamber1-p"+player).value;
+            }
+
+            if(document.getElementById("chamber2-p"+player).value.length>=5){
+                chamber[1] = document.getElementById("chamber2-p"+player).value;
+            }
+
+            if(document.getElementById("chamber3-p"+player).value.length>=5){
+                chamber[2] = document.getElementById("chamber3-p"+player).value;
+            }
+
+            const sum = chamber.reduce((acc, time) => acc.add(moment.duration(time)), moment.duration());
+            let min = Math.floor(sum.asHours()).toString();
+            let sec= Math.floor(sum.minutes()).toString();
+
+            if(min.length==1){
+                min = "0" + min;
+            }
+
+            if(sec.length==1){
+                sec = "0" + sec;
+            }
+
+            $("#total-p"+player).val(min+":"+sec);
+        });
+
+        function click() {
+            x = (Math.floor(Math.random() * 2) == 0);
+            if(x){
+                flip("Heads");
+            }else{
+                flip("Tails");
+            }
+        };
+
+        function flip(coin) {
+            document.getElementById("text-result").innerHTML = coin;
+            alert("Flipping The Coin...");
+            if(coin==="Heads"){
+                document.getElementById("img-result").src = "https://imgur.com/7wuz61J.png";
+            }else{
+                document.getElementById("img-result").src = "https://imgur.com/fY1ln16.png";
+            }
+        };
+
+        function containsObject(obj, arr) {
+            var i;
+            for (i = 0; i < arr.length; i++) {
+                if (arr[i] === obj) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    </script>
+</html>
